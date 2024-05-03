@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* custom button design  */
+@layer components {
+  .btn {
+    @apply px-5 py-3 rounded-md bg-primary border-2 border-primary font-medium text-lg hover:text-primary hover:bg-white hover:border-white transition-all duration-500 delay-75;
+  }
+  .btn-outline {
+    @apply px-5 py-3 rounded-md bg-white border-2 border-primary font-medium text-lg text-primary hover:text-white hover:bg-primary  transition-all duration-500 delay-75;
+  }
+}
+
 /* cursor custom design  */
 
 body::after {
@@ -78,12 +88,3 @@ body:hover ~ #cursor2 {
   font-size: 22px;
   z-index: 9;
 }
-
-/* a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: inherit;
-  }
-  a:hover {
-    color: #535bf2;
-  } */
