@@ -6,12 +6,11 @@ const Services = async () => {
     method: "GET",
   });
   const services = await res.json();
-  console.log(services);
-  console.log("services");
+
   return (
     <div className="bg-[#20303F] py-16 border-slate-600 border-b">
       <div className="max-w-7xl mx-auto px-8">
-        <h1 className="text-center text-white font-bold text-4xl mb-3">
+        <h1 className="text-center text-white font-bold text-4xl mb-3 snap-center">
           MY <span className="text-primary">SERVICES</span>
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
