@@ -4,7 +4,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div
-      className=""
+      className="mt-16 md:mt-[72px] border-slate-600 border-b"
       style={{
         backgroundImage: "url(https://i.ibb.co/r6jnSnP/banner.png)",
         backgroundAttachment: "fixed",
@@ -13,32 +13,29 @@ const Hero = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-40"></div>
+      <div className="absolute inset-0 bg-[#0F172A] opacity-70"></div>
 
       <div className="max-w-7xl mx-auto px-8 relative">
         {" "}
-        <div className="flex justify-between text-white bg-opacity-40 relative">
+        <div className="flex justify-between text-secondary bg-opacity-40 relative">
           {" "}
-          <div className="mt-[12%] relative">
+          <div className="mt-[18%] md:mt-[12%] pb-24 relative">
             {" "}
             <h1 className="text-2xl font-bold mb-1">Hello I'm MD Waliullah</h1>
-            <h2 className="text-4xl font-bold">
+            <h2 className="text-2xl md:text-4xl font-bold">
               Junior <span className="text-primary">FRONT END</span> Developer
             </h2>
-            <p className="w-[500px] text-xl text-justify my-4">
+            <p className="md:w-[500px] text-xl text-justify font-medium  my-4">
               I m a self-learner person. I am constantly gaining new skills in
               web development. By which I can give some good benefit to your
               Team. Besides, I am a hard-working and creative person
             </p>
-            <a
-              download="waliullah's resume"
-              href="https://drive.google.com/file/d/1_HU4GrR4yI7dC-x_2b6iPLSTzmvr9Nce/view?usp=sharing"
-            >
+            <a href="/waliullah_resume.pdf" download="waliullah resume.pdf">
               <button className="btn">Download Resume</button>
             </a>
           </div>
           <Image
-            className=" h-[593px]"
+            className="hidden md:block h-[593px]"
             src="https://i.ibb.co/sJz1XBH/Man-PNG-Free-Download.png"
             height={400}
             width={400}
