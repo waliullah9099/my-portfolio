@@ -5,7 +5,7 @@ const Services = async () => {
   const res = await fetch("http://localhost:5000/services", {
     method: "GET",
   });
-  const services = await res.json();
+  const services: TService[] = await res.json();
 
   return (
     <div className="bg-[#20303F] py-16 border-slate-600 border-b">

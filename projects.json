@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Food Recipe",
+    "project_type": "MERN-Stack",
+    "image": "https://waliullah99.netlify.app/assets/project-6-YsX88ucp.png",
+    "live_link": "https://recipe-site-develop.web.app",
+    "client_side": "https://github.com/waliullah9099/recipe-website-client",
+    "server_side": "https://github.com/waliullah9099/recipe-website-server",
+    "technologies": "React.js, Express.js, MOngoDb,Tailwind CSS, daisyUI, Firebase, JWT",
+    "description": ""
+  },
+  {
+    "name": "Food Management",
+    "project_type": "MERN-Stack",
+    "image": "https://waliullah99.netlify.app/assets/project-1-mBhw7diW.png",
+    "live_link": "https://food-distribution-client.vercel.app",
+    "client_side": "https://github.com/waliullah9099/food_distribution_client",
+    "server_side": "https://github.com/waliullah9099/food-distribution-backend",
+    "technologies": "TypeScript, React.js, Redux.js, Express.js, MongoDb, Ant design, Tailwind CSS, Firebase, Framer Motion",
+    "description": ""
+  },
+  {
+    "name": "Grocery Store",
+    "project_type": "Front End",
+    "image": "https://waliullah99.netlify.app/assets/projects_2-1UTdvwGC.png",
+    "live_link": "https://fish-grosery-store.vercel.app",
+    "client_side": "https://github.com/waliullah9099/grocery-store-client",
+    "server_side": "https://github.com/waliullah9099/grocery-store-backend",
+    "technologies": "TypeScript, Next.js,Tailwind CSS, daisyUI",
+    "description": ""
+  },
+  {
+    "name": "Academi Camp",
+    "project_type": "MERN-Stack",
+    "image": "https://waliullah99.netlify.app/assets/project_3-qGIBFirZ.png",
+    "live_link": "https://academy-camp.netlify.app",
+    "client_side": "https://github.com/waliullah9099/food_distribution_client",
+    "server_side": "https://github.com/waliullah9099/food-distribution-backend",
+    "technologies": "React.js, Express.js, MongoDb, Tailwind CSS, daisyUI, Firebase, JWT",
+    "description": ""
+  },
+  {
+    "name": "Car Doctor",
+    "project_type": "MERN-Stack",
+    "image": "https://waliullah99.netlify.app/assets/project_4-n3QNd539.png",
+    "live_link": "https://car-macanic.netlify.app",
+    "client_side": "https://github.com/waliullah9099/toy-shop-client",
+    "server_side": "https://github.com/waliullah9099/toy-shop-server",
+    "technologies": "React.js,Express.js, MongoDb, Tailwind CSS, daisyUI",
+    "description": ""
+  },
+  {
+    "name": "Kids Toy Shop",
+    "project_type": "MERN-Stack",
+    "image": "https://waliullah99.netlify.app/assets/project-5-Bc6S2E0g.png",
+    "live_link": "https://siam-toys.netlify.app",
+    "client_side": "https://github.com/waliullah9099/car-doctor-client",
+    "server_side": "https://github.com/waliullah9099/car-doctor-server",
+    "technologies": "React.js, Express.js, MOngoDb,Tailwind CSS, daisyUI, Firebase, JWT",
+    "description": ""
+  }
+]

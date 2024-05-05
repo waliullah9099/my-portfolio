@@ -21,7 +21,9 @@ const SkillBox = ({ skill }: { skill: TSkills }) => {
               className="h-full w-auto bg-transparent rounded-lg"
             />
           </div>
-          <p className="text-white text-sm sm:text-lg">{skill.name}</p>
+          <p className="text-white text-sm sm:text-lg uppercase">
+            {skill.name}
+          </p>
         </div>
       </div>
     </div>
