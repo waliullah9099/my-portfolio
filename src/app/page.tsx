@@ -7,6 +7,7 @@ import Services from "../components/home/Services";
 import Skills from "../components/home/Skills";
 import Education from "../components/home/Education";
 import Projects from "../components/home/Projects";
+import Blogs from "@/components/home/Blogs";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Education />
       <Skills />
       <Projects />
+      {/* <Blogs /> */}
       <Contact />
       <Footer />
     </>

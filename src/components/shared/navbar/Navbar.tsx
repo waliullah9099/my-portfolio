@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { useState } from "react";
 
 function Navbar() {
@@ -11,7 +11,7 @@ function Navbar() {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             {/* LOGO */}
-            <Link href="/">
+            <Link to="/">
               <h2 className="text-2xl text-white tex font-semibold md:font-bold ">
                 MD WALIULLAH
               </h2>
@@ -59,38 +59,88 @@ function Navbar() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center py-3 mt-8 md:block md:pb-0 md:mt-0 ${
-              navbar ? "p-12 md:p-0 block" : "hidden"
+            className={`flex-1 justify-self-center py-3 mt-8 md:pt-0 md:-mt-3 md:block md:pb-0  ${
+              navbar ? "p-12  md:p-0 block" : "hidden"
             }`}
           >
-            <ul className="h-screen md:h-auto items-center justify-center md:flex ">
+            <ul className="h-screen -space-x-3 md:h-auto items-center justify-center md:flex ">
               <li className="menuItem">
-                <Link href="#about" onClick={() => setNavbar(!navbar)}>
+                <Link
+                  to="home"
+                  smooth={true}
+                  duration={900}
+                  onClick={() => setNavbar(!navbar)}
+                >
                   Home
                 </Link>
               </li>
               <li className="menuItem">
-                <Link href="#blog" onClick={() => setNavbar(!navbar)}>
+                <Link
+                  to="about"
+                  smooth={true}
+                  duration={900}
+                  onClick={() => setNavbar(!navbar)}
+                >
                   About
                 </Link>
               </li>
               <li className="menuItem">
-                <Link href="#contact" onClick={() => setNavbar(!navbar)}>
+                <Link
+                  to="services"
+                  smooth={true}
+                  duration={900}
+                  onClick={() => setNavbar(!navbar)}
+                >
                   Services
                 </Link>
               </li>
               <li className="menuItem">
-                <Link href="#contact" onClick={() => setNavbar(!navbar)}>
+                <Link
+                  to="skills"
+                  smooth={true}
+                  duration={900}
+                  onClick={() => setNavbar(!navbar)}
+                >
                   Skills
                 </Link>
               </li>
               <li className="menuItem">
-                <Link href="#projects" onClick={() => setNavbar(!navbar)}>
+                <Link
+                  to="projects"
+                  smooth={true}
+                  duration={900}
+                  onClick={() => setNavbar(!navbar)}
+                >
                   Projects
                 </Link>
               </li>
               <li className="menuItem">
-                <Link href="#projects" onClick={() => setNavbar(!navbar)}>
+                <Link
+                  to="education"
+                  smooth={true}
+                  duration={900}
+                  onClick={() => setNavbar(!navbar)}
+                >
+                  Education
+                </Link>
+              </li>
+              <li className="menuItem">
+                <Link
+                  to="blog"
+                  smooth={true}
+                  duration={900}
+                  onClick={() => setNavbar(!navbar)}
+                >
+                  Blogs
+                </Link>
+              </li>
+              <li className="menuItem">
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={900}
+                  onClick={() => setNavbar(!navbar)}
+                >
                   Contact
                 </Link>
               </li>

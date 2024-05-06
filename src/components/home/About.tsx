@@ -5,7 +5,7 @@ import SocialIcons from "@/components/ui/SocialIcons";
 
 const About = () => {
   return (
-    <div className="bg-[#03202E] py-16 border-slate-600 border-b">
+    <div id="about" className="bg-[#03202E] py-16 border-slate-600 border-b">
       <div className="max-w-7xl mx-auto px-8 relative">
         <div className="flex flex-col md:flex-row gap-8 text-white">
           <Image

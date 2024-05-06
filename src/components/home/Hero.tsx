@@ -16,7 +16,7 @@ const Hero = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-[#0F172A] opacity-70"></div>
 
-      <div className="max-w-7xl mx-auto px-8 relative">
+      <div id="home" className="max-w-7xl mx-auto px-8 relative">
         {" "}
         <div className="flex justify-between text-secondary bg-opacity-40 relative">
           {" "}
@@ -36,8 +36,8 @@ const Hero = () => {
             </a>
           </div>
           <Image
-            className="hidden md:block h-[593px]"
-            src="https://i.ibb.co/sJz1XBH/Man-PNG-Free-Download.png"
+            className="hidden md:block h-[593px] w-full "
+            src="https://waliullah99.netlify.app/assets/image-yBa2X2Yo.png"
             height={400}
             width={400}
             alt=""

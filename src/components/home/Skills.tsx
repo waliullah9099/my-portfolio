@@ -22,7 +22,7 @@ const Skills = async () => {
   const skillsData = await frontrSkills.json();
   const backendSkillsData = await backendSkills.json();
   return (
-    <div className="bg-[#040E13] py-16 border-slate-600 border-b">
+    <div id="skills" className="bg-[#040E13] py-16 border-slate-600 border-b">
       <div className="max-w-7xl mx-auto px-8">
         <h1 className="text-center text-white font-bold text-4xl mb-3 snap-center">
           MY <span className="text-primary">SKILLS</span>

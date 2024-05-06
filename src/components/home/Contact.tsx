@@ -10,7 +10,7 @@ const Contact = () => {
   } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
   return (
-    <div className="bg-[#051924] py-16 border-slate-600 border-b">
+    <div id="contact" className="bg-[#051924] py-16 border-slate-600 border-b">
       <div className="max-w-7xl mx-auto px-8">
         <h1 className="text-center text-white font-bold text-4xl mb-3 snap-center">
           <span className="text-primary">CONTACT</span> ME
