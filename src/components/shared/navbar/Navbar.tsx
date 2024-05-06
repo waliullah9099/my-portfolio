@@ -64,24 +64,34 @@ function Navbar() {
             }`}
           >
             <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-              <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-[#04293C]  border-[#04293C]  md:hover:text-[#04293C] md:hover:bg-transparent">
+              <li className="menuItem">
                 <Link href="#about" onClick={() => setNavbar(!navbar)}>
+                  Home
+                </Link>
+              </li>
+              <li className="menuItem">
+                <Link href="#blog" onClick={() => setNavbar(!navbar)}>
                   About
                 </Link>
               </li>
-              <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-white  border-[#04293C]  md:hover:text-[#04293C] md:hover:bg-transparent">
-                <Link href="#blog" onClick={() => setNavbar(!navbar)}>
-                  Blogs
-                </Link>
-              </li>
-              <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-white  border-[#04293C]  md:hover:text-[#04293C] md:hover:bg-transparent">
+              <li className="menuItem">
                 <Link href="#contact" onClick={() => setNavbar(!navbar)}>
-                  Contact
+                  Services
                 </Link>
               </li>
-              <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-white  border-[#04293C]  md:hover:text-[#04293C] md:hover:bg-transparent">
+              <li className="menuItem">
+                <Link href="#contact" onClick={() => setNavbar(!navbar)}>
+                  Skills
+                </Link>
+              </li>
+              <li className="menuItem">
                 <Link href="#projects" onClick={() => setNavbar(!navbar)}>
                   Projects
+                </Link>
+              </li>
+              <li className="menuItem">
+                <Link href="#projects" onClick={() => setNavbar(!navbar)}>
+                  Contact
                 </Link>
               </li>
             </ul>

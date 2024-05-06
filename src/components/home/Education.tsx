@@ -2,9 +2,14 @@ import EducationBox from "@/components/ui/EducationBox";
 import { TEducations } from "@/types";
 
 const Education = async () => {
-  const res = await fetch("http://localhost:5000/educations", {
-    method: "GET",
-  });
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/educations`,
+    {
+      next: {
+        revalidate: 30,
+      },
+    }
+  );
   const educations: TEducations[] = await res.json();
   return (
     <div className="bg-[#20303F] py-16 border-slate-600 border-b">

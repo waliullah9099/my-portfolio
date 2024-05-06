@@ -3,12 +3,22 @@ import { TSkills } from "@/types";
 import Marquee from "react-fast-marquee";
 
 const Skills = async () => {
-  const frontrSkills = await fetch("http://localhost:5000/skills", {
-    method: "GET",
-  });
-  const backendSkills = await fetch("http://localhost:5000/backend_skills", {
-    method: "GET",
-  });
+  const frontrSkills = await fetch(
+    `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/skills`,
+    {
+      next: {
+        revalidate: 30,
+      },
+    }
+  );
+  const backendSkills = await fetch(
+    `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/backend_skills`,
+    {
+      next: {
+        revalidate: 30,
+      },
+    }
+  );
   const skillsData = await frontrSkills.json();
   const backendSkillsData = await backendSkills.json();
   return (

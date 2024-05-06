@@ -2,13 +2,18 @@ import { TService } from "@/types";
 import Image from "next/image";
 
 const Services = async () => {
-  const res = await fetch("http://localhost:5000/services", {
-    method: "GET",
-  });
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/services`,
+    {
+      next: {
+        revalidate: 30,
+      },
+    }
+  );
   const services: TService[] = await res.json();
 
   return (
-    <div className="bg-[#20303F] py-16 border-slate-600 border-b">
+    <div className="bg-[#04263cf4] py-16 border-slate-600 border-b">
       <div className="max-w-7xl mx-auto px-8">
         <h1 className="text-center text-white font-bold text-4xl mb-3 snap-center">
           MY <span className="text-primary">SERVICES</span>

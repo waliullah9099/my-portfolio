@@ -2,10 +2,15 @@ import { TProject } from "@/types";
 import Image from "next/image";
 
 const Projects = async () => {
-  const res = await fetch("http://localhost:5000/projects", {
-    method: "GET",
-  });
-  const projects = await res.json();
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/projects`,
+    {
+      next: {
+        revalidate: 30,
+      },
+    }
+  );
+  const projects: TProject[] = await res.json();
 
   return (
     <div className="bg-[#041218] py-16 border-slate-600 border-b">

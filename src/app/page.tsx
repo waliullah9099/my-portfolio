@@ -1,12 +1,12 @@
 import Footer from "@/components/shared/footer/Footer";
 import Navbar from "@/components/shared/navbar/Navbar";
-import About from "@/pages/home/About";
-import Contact from "@/pages/home/Contact";
-import Education from "@/pages/home/Education";
-import Hero from "@/pages/home/Hero";
-import Projects from "@/pages/home/Projects";
-import Services from "@/pages/home/Services";
-import Skills from "@/pages/home/Skills";
+import About from "@/components/home/About";
+import Contact from "@/components/home/Contact";
+import Hero from "@/components/home/Hero";
+import Services from "../components/home/Services";
+import Skills from "../components/home/Skills";
+import Education from "../components/home/Education";
+import Projects from "../components/home/Projects";
 
 export default function Home() {
   return (

@@ -38,7 +38,7 @@ const Contact = () => {
                 className="input"
                 {...register("subject")}
               />
-              <input
+              <textarea
                 placeholder="Your Message"
                 className="input h-44"
                 {...register("description", { required: true })}
